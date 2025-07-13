@@ -29,12 +29,30 @@
 		91F0E9152E209AEA0056D3AA /* BusCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		91F0E9002E209AE80056D3AA /* BusCard */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BusCard;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		91F0E9472E209CA30056D3AA /* Exceptions for "BusCard" folder in "BusCard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				BusCardApp.swift,
+				ContentView.swift,
+				"fonts/LibertinusMono-Regular.ttf",
+			);
+			target = 91F0E8FD2E209AE80056D3AA /* BusCard */;
 		};
+		91F0E9482E209CA30056D3AA /* Exceptions for "BusCard" folder in "BusCardUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				BusCardApp.swift,
+				ContentView.swift,
+				Info.plist,
+			);
+			target = 91F0E9142E209AEA0056D3AA /* BusCardUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		91F0E90E2E209AEA0056D3AA /* BusCardTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BusCardTests;
@@ -43,6 +61,15 @@
 		91F0E9182E209AEA0056D3AA /* BusCardUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BusCardUITests;
+			sourceTree = "<group>";
+		};
+		91F0E9432E209CA30056D3AA /* BusCard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				91F0E9472E209CA30056D3AA /* Exceptions for "BusCard" folder in "BusCard" target */,
+				91F0E9482E209CA30056D3AA /* Exceptions for "BusCard" folder in "BusCardUITests" target */,
+			);
+			path = BusCard;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,7 +102,7 @@
 		91F0E8F52E209AE80056D3AA = {
 			isa = PBXGroup;
 			children = (
-				91F0E9002E209AE80056D3AA /* BusCard */,
+				91F0E9432E209CA30056D3AA /* BusCard */,
 				91F0E90E2E209AEA0056D3AA /* BusCardTests */,
 				91F0E9182E209AEA0056D3AA /* BusCardUITests */,
 				91F0E8FF2E209AE80056D3AA /* Products */,
@@ -106,9 +133,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				91F0E9002E209AE80056D3AA /* BusCard */,
 			);
 			name = BusCard;
 			packageProductDependencies = (
@@ -155,6 +179,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				91F0E9182E209AEA0056D3AA /* BusCardUITests */,
+				91F0E9432E209CA30056D3AA /* BusCard */,
 			);
 			name = BusCardUITests;
 			packageProductDependencies = (
@@ -400,6 +425,7 @@
 				DEVELOPMENT_TEAM = YZ2VVQY5SY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BusCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +454,7 @@
 				DEVELOPMENT_TEAM = YZ2VVQY5SY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BusCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

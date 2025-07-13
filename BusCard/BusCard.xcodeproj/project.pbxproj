@@ -37,6 +37,7 @@
 				BusCardApp.swift,
 				ContentView.swift,
 				"fonts/LibertinusMono-Regular.ttf",
+				InfoView.swift,
 			);
 			target = 91F0E8FD2E209AE80056D3AA /* BusCard */;
 		};
@@ -47,6 +48,7 @@
 				BusCardApp.swift,
 				ContentView.swift,
 				Info.plist,
+				InfoView.swift,
 			);
 			target = 91F0E9142E209AEA0056D3AA /* BusCardUITests */;
 		};
